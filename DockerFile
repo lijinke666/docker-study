@@ -23,4 +23,6 @@ RUN yarn \
 EXPOSE 80
 
 # 关闭守护进程
-CMD ['nginx',"-g","daemon off;"]
+CMD ['nginx',"-g"]
+
+CMD ["daemon off;"]
