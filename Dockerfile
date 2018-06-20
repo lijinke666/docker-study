@@ -15,8 +15,8 @@ WORKDIR /app
 # 执行打包命令
 # 拷贝dist
 RUN yarn \ 
-    && yarn build
-    && cp -r dist/* /var/www/html
+    && yarn build \
+    && cp -r dist/* /var/www/html \
     && rm -rf /app
 
 # 允许外部连接这个端口
